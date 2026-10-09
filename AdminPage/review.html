@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="dashboard">
+            <h1><i class="fas fa-leaf"></i>Admin</h1>
+
+            <div class="dashboard-page">
+                <a href="dashboard.html"><i class="fas fa-th-large"></i> <span>Dashboard</span></a>
+                <a href="manageCard.html"><i class="fas fa-car"></i> <span>Manage Cars</span></a>
+                <a href="addNewCar.html"><i class="fas fa-plus-circle"></i> <span>Add New Car</span></a>
+                <a href="BuyOrder.html"><i class="fas fa-shopping-cart"></i> <span>Buy Orders</span></a>
+                <a href="rentBooking.html"><i class="fas fa-calendar-check"></i> <span>Rental Bookings</span></a>
+                <a href="sellRequest.html"><i class="fas fa-handshake"></i> <span>Sell Requests</span></a>
+                <a href="review.html"><i class="fas fa-star"></i> <span>Reviews</span></a>
+                <a href="adminLogin.html" class="logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="navbar">
+            <h1 style="color:  #0a0e1a;">Review Page</h1>
+
+            <div class="profile">
+
+                <i class="fas fa-user-circle" onclick="toggleMenu()"></i>
+
+                <div class="profile-menu" id="profileMenu">
+
+                    <a href="Setting.html">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+
+                    <a href="adminLogin.html">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- -----------------------java script------------------ -->
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("profileMenu");
+
+                    menu.style.display =
+                        menu.style.display === "block"
+                            ? "none"
+                            : "block";
+                }
+
+                window.addEventListener("click", function (event) {
+
+                    const menu = document.getElementById("profileMenu");
+                    const profileIcon = document.querySelector(".fa-user-circle");
+
+                    if (
+                        !profileIcon.contains(event.target) &&
+                        !menu.contains(event.target)
+                    ) {
+                        menu.style.display = "none";
+                    }
+
+                });
+            </script>
+
+    </section>
+
+    <section class="reviews-section">
+
+    <div class="reviews-card">
+
+        <!-- TITLE -->
+        <div class="reviews-title">
+            <h2>
+                <i class="fa-solid fa-star"></i>
+                Reviews & Enquiries
+            </h2>
+        </div>
+
+        <!-- TABLE -->
+        <div class="table-wrapper">
+
+            <table class="reviews-table">
+
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Review</th>
+                        <th>Rating</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- REVIEW 1 -->
+                    <tr>
+                        <td>Kiran</td>
+
+                        <td>
+                            Excellent service! Car was spotless.
+                        </td>
+
+                        <td>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="status approved">
+                                Approved
+                            </span>
+                        </td>
+
+                        <td>
+                            <div class="action-buttons">
+                                <button class="delete-btn">
+                                    Delete
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- REVIEW 2 -->
+                    <tr>
+                        <td>Maya</td>
+
+                        <td>
+                            Good car but pickup was delayed.
+                        </td>
+
+                        <td>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="status pending">
+                                Pending
+                            </span>
+                        </td>
+
+                        <td>
+                            <div class="action-buttons">
+
+                                <button class="approve-btn">
+                                    Approve
+                                </button>
+
+                                <button class="delete-btn">
+                                    Delete
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- REVIEW 3 -->
+                    <tr>
+                        <td>Rohit</td>
+
+                        <td>
+                            Best rental experience in Chennai.
+                        </td>
+
+                        <td>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="status approved">
+                                Approved
+                            </span>
+                        </td>
+
+                        <td>
+                            <div class="action-buttons">
+                                <button class="delete-btn">
+                                    Delete
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>

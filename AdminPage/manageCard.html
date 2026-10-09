@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="manageCard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="dashboard">
+            <h1><i class="fas fa-leaf"></i>Admin</h1>
+
+            <div class="dashboard-page">
+                <a href="dashboard.html"><i class="fas fa-th-large"></i> <span>Dashboard</span></a>
+                <a href="manageCard.html"><i class="fas fa-car"></i> <span>Manage Cars</span></a>
+                <a href="addNewCar.html"><i class="fas fa-plus-circle"></i> <span>Add New Car</span></a>
+                <a href="BuyOrder.html"><i class="fas fa-shopping-cart"></i> <span>Buy Orders</span></a>
+                <a href="BuyOrder.html"><i class="fas fa-calendar-check"></i> <span>Rental Bookings</span></a>
+                <a href="sellRequest.html"><i class="fas fa-handshake"></i> <span>Sell Requests</span></a>
+                <a href="review.html"><i class="fas fa-star"></i> <span>Reviews</span></a>
+                <a href="adminLogin.html" class="logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="navbar">
+            <h1 style="color:  #0a0e1a;">Manage Car</h1>
+
+            <div class="profile">
+
+                <i class="fas fa-user-circle" onclick="toggleMenu()"></i>
+
+                <div class="profile-menu" id="profileMenu">
+
+                    <a href="Setting.html">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+
+                    <a href="adminLogin.html">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- -----------------------java script------------------ -->
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("profileMenu");
+
+                    menu.style.display =
+                        menu.style.display === "block"
+                            ? "none"
+                            : "block";
+                }
+
+                window.addEventListener("click", function (event) {
+
+                    const menu = document.getElementById("profileMenu");
+                    const profileIcon = document.querySelector(".fa-user-circle");
+
+                    if (
+                        !profileIcon.contains(event.target) &&
+                        !menu.contains(event.target)
+                    ) {
+                        menu.style.display = "none";
+                    }
+
+                });
+            </script>
+
+    </section>
+
+    <section class="product-section">
+
+        <div class="product-table-card">
+
+            <!-- TABLE TITLE -->
+
+            <div class="table-title">
+                <h2>
+                    <i class="fa-solid fa-car"></i>
+                    All Cars
+                    <span>(Buy / Rent)</span>
+                </h2>
+            </div>
+
+
+            <!-- TABLE -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Type</th>
+                            <th>Image</th>
+                            <th>Brand / Model</th>
+                            <th>Price</th>
+                            <th>Fuel</th>
+                            <th>KM</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <!-- PRODUCT 1 -->
+
+                        <tr>
+
+                            <td>
+                                <span class="type buy">
+                                    Buy
+                                </span>
+                            </td>
+
+                            <td>
+                                <img src="img/img1.jpg" class="car-img" alt="BMW X5">
+                            </td>
+
+                            <td>
+                                <strong>BMW X5</strong>
+                                <span class="year">(2023)</span>
+                            </td>
+
+                            <td>
+                                ₹58.0L
+                            </td>
+
+                            <td>
+                                Petrol
+                            </td>
+
+                            <td>
+                                18000 km
+                            </td>
+
+                            <td>
+                                <span class="status available">
+                                    Available
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button class="edit-btn">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- PRODUCT 2 -->
+
+                        <tr>
+
+                            <td>
+                                <span class="type rent">
+                                    Rent
+                                </span>
+                            </td>
+
+                            <td>
+                                <img src="img/img12.webp" class="car-img" alt="Mercedes">
+                            </td>
+
+                            <td>
+                                <strong>Mercedes GLC300</strong>
+                                <span class="year">(2024)</span>
+                            </td>
+
+                            <td>
+                                ₹4500/day
+                            </td>
+
+                            <td>
+                                Petrol
+                            </td>
+
+                            <td>
+                                5000 km
+                            </td>
+
+                            <td>
+                                <span class="status available">
+                                    Available
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button class="edit-btn">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- PRODUCT 3 -->
+
+                        <tr>
+
+                            <td>
+                                <span class="type buy">
+                                    Buy
+                                </span>
+                            </td>
+
+                            <td>
+                                <img src="img/img2.webp" class="car-img" alt="Audi Q7">
+                            </td>
+
+                            <td>
+                                <strong>Audi Q7</strong>
+                                <span class="year">(2023)</span>
+                            </td>
+
+                            <td>
+                                ₹72.0L
+                            </td>
+
+                            <td>
+                                Diesel
+                            </td>
+
+                            <td>
+                                12000 km
+                            </td>
+
+                            <td>
+                                <span class="status sold">
+                                    Sold
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button class="edit-btn">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

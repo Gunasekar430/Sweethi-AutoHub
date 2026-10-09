@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 
+.navebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 0px 15px black;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    
+}
+
+.navebar .header {
+    display: flex;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navebar .header h1 {
+    font-size: 2.5rem;
+}
+
+.navebar .header ul {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 17px;
+    font-size: 18px;
+}
+
+.navebar .header ul li {
+    list-style: none;
+    padding-left: 35px;
+}
+
+.navebar .header ul li a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.navebar .header ul li a:hover {
+    cursor: pointer;
+    color: #f97316;
+
+}
+
+
+.header ul li a::after {
+    content: ' ';
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: #f97316;
+    transition: 0.2s linear;
+}
+
+.header ul li a:hover:after {
+    width: 100%;
+}
+
+.navebar .button {
+    margin-top: 22px;
+    margin-right: 10%;
+
+}
+
+.navebar .button button {
+    padding: 10px 25px 10px 25px;
+    font-size: 15px;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Arial;
+}
+
+.navebar .button button span {
+    color: black;
+    padding: 5px;
+} */
+
+.container {
+    width: 95%;
+    margin-left:2%;
+    margin-top: 5vh;
+    display: flex;
+    
+}
+
+.img-card {
+    width: 55%;
+}
+
+.img-card img {
+    width: 100%;
+    height: 85vh;
+}
+
+.sub-card {
+    margin-left: 5%;
+}
+
+.text-card h5 {
+    padding: 5px 15px 5px 15px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.text-card h1 {
+    font-size: 3rem;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.text-card .rating {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.text-card .rating span {
+    padding-left: 20px;
+    color: rgb(95, 95, 96);
+}
+
+.text-card h3 {
+    font-size: 25px;
+    padding-top: 5px;
+}
+.text-card h3 span {
+    font-size: 40px;
+    color: #f97316;
+}
+
+.text-card p {
+    padding-top: 10px;
+    font-size: 17px;
+    color: rgb(84, 84, 85);
+    padding-bottom: 10px;
+}
+
+
+.car-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0;
+}
+
+.box{
+    flex:1;
+    text-align:center;
+    border-right:1px solid #ddd;
+}
+
+.box:last-child{
+    border:none;
+}
+
+.box i{
+    font-size:20px;
+    color:#111;
+    margin-bottom:10px;
+}
+
+.box small{
+    display:block;
+    color:#777;
+    font-size:16px;
+}
+
+.box p{
+    font-size:21px;
+    font-weight:bold;
+}
+
+
+.rent-info{
+    display:flex;
+    gap:20px;
+}
+
+.info-box{
+    margin-top: 10px;
+    flex:1;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.info-box i{
+    font-size:30px;
+    color:#f97316;
+    margin-bottom:15px;
+}
+
+.info-box h4{
+    margin-bottom:10px;
+}
+
+.info-box p{
+    font-weight:bold;
+    font-size:18px;
+}
+
+
+.book-btn{
+    flex:1;
+    height:60px;
+    border:none;
+    background:#111827;
+    color:#fff;
+    border-radius:10px;
+    font-size:20px;
+    cursor:pointer;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.book-btn:hover{
+    background:#f97316;
+}

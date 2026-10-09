@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="dashboard">
+            <h1><i class="fas fa-leaf"></i>Admin</h1>
+
+            <div class="dashboard-page">
+                <a href="dashboard.html"><i class="fas fa-th-large"></i> <span>Dashboard</span></a>
+                <a href="manageCard.html"><i class="fas fa-car"></i> <span>Manage Cars</span></a>
+                <a href="addNewCar.html"><i class="fas fa-plus-circle"></i> <span>Add New Car</span></a>
+                <a href="BuyOrder.html"><i class="fas fa-shopping-cart"></i> <span>Buy Orders</span></a>
+                <a href="rentBooking.html"><i class="fas fa-calendar-check"></i> <span>Rental Bookings</span></a>
+                <a href="sellRequest.html"><i class="fas fa-handshake"></i> <span>Sell Requests</span></a>
+                <a href="review.html"><i class="fas fa-star"></i> <span>Reviews</span></a>
+                <a href="adminLogin.html" class="logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="navbar">
+            <h1 style="color:  #0a0e1a;">Dashboard</h1>
+
+            <div class="profile">
+
+                <i class="fas fa-user-circle" onclick="toggleMenu()"></i>
+
+                <div class="profile-menu" id="profileMenu">
+
+                    <a href="Setting.html">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+
+                    <a href="adminLogin.html">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- -----------------------java script------------------ -->
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("profileMenu");
+
+                    menu.style.display =
+                        menu.style.display === "block"
+                            ? "none"
+                            : "block";
+                }
+
+                window.addEventListener("click", function (event) {
+
+                    const menu = document.getElementById("profileMenu");
+                    const profileIcon = document.querySelector(".fa-user-circle");
+
+                    if (
+                        !profileIcon.contains(event.target) &&
+                        !menu.contains(event.target)
+                    ) {
+                        menu.style.display = "none";
+                    }
+
+                });
+            </script>
+
+    </section>
+
+    <section class="dash-main-content">
+
+    <div class="dash-stats-grid">
+
+        <div class="dash-stat-card">
+            <div class="dash-stat-text">
+                <p>TOTAL CARS</p>
+                <h2>3</h2>
+            </div>
+
+            <div class="dash-stat-icon">
+                <i class="fa-solid fa-car"></i>
+            </div>
+        </div>
+
+        <div class="dash-stat-card">
+            <div class="dash-stat-text">
+                <p>CARS FOR SALE</p>
+                <h2>2</h2>
+            </div>
+
+            <div class="dash-stat-icon">
+                <i class="fa-solid fa-tag"></i>
+            </div>
+        </div>
+
+        <div class="dash-stat-card">
+            <div class="dash-stat-text">
+                <p>RENTAL CARS</p>
+                <h2>1</h2>
+            </div>
+
+            <div class="dash-stat-icon">
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+        </div>
+
+        <div class="dash-stat-card">
+            <div class="dash-stat-text">
+                <p>TOTAL USERS</p>
+                <h2>3</h2>
+            </div>
+
+            <div class="dash-stat-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+        </div>
+
+        <div class="dash-stat-card">
+            <div class="dash-stat-text">
+                <p>NEW BOOKINGS</p>
+                <h2>1</h2>
+            </div>
+
+            <div class="dash-stat-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+        </div>
+
+        <div class="dash-stat-card">
+            <div class="dash-stat-text">
+                <p>PENDING SELL REQ.</p>
+                <h2>2</h2>
+            </div>
+
+            <div class="dash-stat-icon">
+                <i class="fa-solid fa-hourglass-half"></i>
+            </div>
+        </div>
+
+        <div class="dash-stat-card">
+            <div class="dash-stat-text">
+                <p>TOTAL REVENUE</p>
+                <h2>₹58.1L</h2>
+            </div>
+
+            <div class="dash-stat-icon">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="dash-bottom-grid">
+
+        <div class="dash-table-card">
+
+            <div class="dash-table-title">
+                <h2>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    Recent Bookings
+                </h2>
+            </div>
+
+            <div class="dash-table-wrapper">
+
+                <table class="dash-table">
+
+                    <thead>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Car</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Vikram S.</td>
+                            <td>Mercedes GLC300</td>
+                            <td>2026-07-10</td>
+
+                            <td>
+                                <span class="dash-status dash-approved">
+                                    Approved
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Priya M.</td>
+                            <td>BMW X5</td>
+                            <td>2026-07-15</td>
+
+                            <td>
+                                <span class="dash-status dash-pending">
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="dash-table-card">
+
+            <div class="dash-table-title">
+                <h2>
+                    <i class="fa-solid fa-thumbtack"></i>
+                    Pending Sell Requests
+                </h2>
+            </div>
+
+            <div class="dash-table-wrapper">
+
+                <table class="dash-table dash-sell-table">
+
+                    <thead>
+                        <tr>
+                            <th>Owner</th>
+                            <th>Car</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Rahul Verma</td>
+
+                            <td>
+                                Toyota Innova Crysta
+                            </td>
+
+                            <td>₹18.0L</td>
+
+                            <td>
+                                <div class="dash-actions">
+
+                                    <button class="dash-approve-btn">
+                                        Approve
+                                    </button>
+
+                                    <button class="dash-reject-btn">
+                                        Reject
+                                    </button>
+
+                                    <button class="dash-inspect-btn">
+                                        Inspect
+                                    </button>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Ananya Iyer</td>
+
+                            <td>Hyundai Creta</td>
+
+                            <td>₹14.5L</td>
+
+                            <td>
+                                <div class="dash-actions">
+
+                                    <button class="dash-approve-btn">
+                                        Approve
+                                    </button>
+
+                                    <button class="dash-reject-btn">
+                                        Reject
+                                    </button>
+
+                                    <button class="dash-inspect-btn">
+                                        Inspect
+                                    </button>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>

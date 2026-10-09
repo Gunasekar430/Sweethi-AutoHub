@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+
+            <label for="">Name</label>
+            <input type="text" placeholder="Enter your name" id="name">
+
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter Your name" id="email">
+
+            <label for="">Password</label>
+            <input type="number" placeholder="Enter your passWord" id="pass">
+
+            <input type="checkbox" id="check">
+
+            <button onclick="checkBox()">Click</button>
+
+        </form>
+    </div>
+
+    <script>
+        
+        var Check = document.getElementById("check")
+
+        function checkBox(){
+            var Name = document.getElementById("name").value;
+            var Email = document.getElementById("email").value;
+            var Password = document.getElementById("pass").value;
+
+            var UserName = localStorage.getItem("UserName")
+            var UserEmail = localStorage.getItem("UserEmail")
+            var UserPassword = localStorage.getItem("UserPassword")
+
+             if(Name === UserName && Email === UserEmail && Password ===  UserPassword){
+            window.location.href = 'index.html'
+        }
+
+        else{
+            alert("Rong")
+        }
+        }
+
+
+//         var Check = document.getElementById("check");
+
+// function checkBox() {
+//     var Name = document.getElementById("name").value;
+//     var Email = document.getElementById("email").value;
+//     var Password = document.getElementById("pass").value;
+
+//     var UserName = localStorage.getItem("UserName");
+//     var UserEmail = localStorage.getItem("UserEmail");
+//     var UserPassword = localStorage.getItem("UserPassword");
+
+//     if (
+//         Name === UserName &&
+//         Email === UserEmail &&
+//         Password === UserPassword
+//     ) {
+//         window.location.href = "index.html";
+//     } else {
+//         alert("Wrong Name, Email or Password");
+//     }
+// }
+        // if(Check.checked == true){
+            //     localStorage.setItem("UserName", Name)
+            //     localStorage.setItem("UserEmail", Email)
+            //     localStorage.setItem("UserPassword", Password)
+
+            //     alert("stored")
+            // }
+
+        //  if(localStorage.getItem("UserName")){
+        //     document.getElementById("name").value = localStorage.getItem("UserName")
+        //     document.getElementById("email").value = localStorage.getItem("UserEmail")
+        //     document.getElementById("pass").value = localStorage.getItem("UserPassword")
+        //  }
+
+    </script>
+</body>
+</html>

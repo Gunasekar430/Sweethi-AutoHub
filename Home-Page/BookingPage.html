@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoHub Booking</title>
+
+    <link rel="stylesheet" href="BookingPage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="BookingPage.css">
+</head>
+
+<body>
+
+    <section class="booking-section">
+
+        <div class="container">
+
+            <div class="heading">
+
+                <h1>Car Rental Booking</h1>
+
+                <p>
+                    Complete the form Below to Reserve your Car.
+                </p>
+
+            </div>
+
+            <div class="booking-container">
+
+                <!-- LEFT SIDE -->
+
+                <div class="booking-form">
+
+                    <form action="">
+
+                        <div class="input-group">
+
+                            <div class="input-box">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter Full Name" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label>Age</label>
+                                <input type="number" placeholder="Enter Age" required>
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <div class="input-box">
+                                <label>Mobile Number</label>
+                                <input type="tel" placeholder="Enter Mobile Number" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Enter Email Address" required>
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <label>Residential Address</label>
+
+                            <textarea rows="4" placeholder="Enter Your Full Address"></textarea>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <div class="input-box">
+                                <label>Driving License Number</label>
+                                <input type="text" placeholder="DLXXXXXXXXXXXX" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label>License Expiry Date</label>
+                                <input type="date" required>
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <div class="input-box">
+                                <label>Pickup Location</label>
+                                <input type="text" placeholder="Pickup Location">
+                            </div>
+
+                            <div class="input-box">
+                                <label>Return Location</label>
+                                <input type="text" placeholder="Return Location">
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <div class="input-box">
+
+                                <label>Upload Driving License</label>
+
+                                <div class="img-card">
+                                    <label for="fileInput1">
+                                        <div class="photo-preview" id="photoPreview1">
+                                            <i class="fa-solid fa-car-side"></i>
+                                        </div>
+                                    </label>
+
+                                    <input type="file" id="fileInput1" accept="image/*" hidden
+                                        onchange="previewImage(event, 'photoPreview1')">
+                                </div>
+
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <label>Upload Aadhaar Card</label>
+
+                                 <div class="img-card">
+                                    <label for="fileInput2">
+                                        <div class="photo-preview" id="photoPreview2">
+                                            <i class="fa-solid fa-car-side"></i>
+                                        </div>
+                                    </label>
+
+                                    <input type="file" id="fileInput2" accept="image/*" hidden
+                                        onchange="previewImage(event, 'photoPreview2')">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <label>Payment Method</label>
+
+                            <select>
+
+                                <option>UPI</option>
+
+                                <option>Credit Card</option>
+
+                                <option>Debit Card</option>
+
+                                <option>Net Banking</option>
+
+                                <option>Cash</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-box">
+
+                            <label>Additional Notes</label>
+
+                            <textarea rows="4" placeholder="Any special request..."></textarea>
+
+                        </div>
+
+
+                        <div class="check">
+
+                            <input type="checkbox" required>
+
+                            <span>
+
+                                I agree to the Terms &
+                                Conditions and Rental Policy.
+
+                            </span>
+
+                        </div>
+
+
+                        <button class="book-btn">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            Confirm Booking
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+
+                <!-- RIGHT SIDE -->
+
+                <div class="car-card">
+
+                    <img src="img/Bye-img/img13.webp" alt="Car">
+
+
+                    <div class="overlay">
+
+                        <span class="status">
+
+                            Available Now
+
+                        </span>
+
+                        <h2>Mercedes Benz GLC300</h2>
+
+                        <h3>₹4,500 <span>/ Day</span></h3>
+
+                        <div class="details">
+
+                            <p>
+                                <i class="fa-solid fa-gas-pump"></i>
+                                Petrol
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-user-group"></i>
+                                5 Seats
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Min : 1 Day
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-clock"></i>
+                                Max : 2 Weeks
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Chennai
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            x
+        </div>
+
+    </section>
+
+    <script>
+
+        const today = new Date();
+
+        const tomorrow = new Date(today);
+
+        tomorrow.setDate(today.getDate() + 1);
+
+        document.getElementById("pickupDate").value =
+            today.toISOString().split("T")[0];
+
+        document.getElementById("pickupDate").min =
+            today.toISOString().split("T")[0];
+
+        document.getElementById("returnDate").value =
+            tomorrow.toISOString().split("T")[0];
+
+        document.getElementById("returnDate").min =
+            tomorrow.toISOString().split("T")[0];
+
+        function previewImage(event, previewId) {
+
+                const file = event.target.files[0];
+                const preview = document.getElementById(previewId);
+
+                if (!file) {
+                    return;
+                }
+
+                if (!file.type.startsWith("image/")) {
+                    alert("Please select an image file");
+                    event.target.value = "";
+                    return;
+                }
+
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.innerHTML = `
+                <img src="${e.target.result}" alt="Car Preview">
+            `;
+                };
+
+                reader.readAsDataURL(file);
+            }
+    </script>
+
+</body>
+
+</html>

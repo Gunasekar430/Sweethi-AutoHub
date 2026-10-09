@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f4f3;
+    
+}
+
+
+/* =================== NAVBAR =================== */
+
+.navebar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: black;
+    color: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.navebar .header {
+    display: flex;
+    align-items: center;
+}
+
+.navebar .header h1 {
+    font-size: 2.5rem;
+}
+
+.navebar .header ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: 50px;
+}
+
+.navebar .header ul li {
+    list-style: none;
+}
+
+.navebar .header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navebar .header ul li a:hover {
+    color: #f97316;
+}
+
+.header ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: #f97316;
+    transition: 0.2s linear;
+}
+
+.header ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* =================== NAVBAR PROFILE =================== */
+
+.navbar-pro {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile > i {
+    font-size: 38px;
+    color: #f97316;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profile > i:hover {
+    color: white;
+}
+
+
+/* =================== PROFILE DROPDOWN =================== */
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 180px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 3000;
+}
+
+.profile-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #111827;
+    font-size: 15px;
+}
+
+.profile-menu a:hover {
+    background-color: #f3f4f6;
+}
+
+.profile-menu a i {
+    width: 22px;
+    color: #f97316;
+}
+
+
+/* =================== PROFILE PAGE =================== */
+
+.profile-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 140px 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =================== PROFILE CARD =================== */
+
+.profile-card {
+    width: 100%;
+    max-width: 850px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =================== PROFILE HEADING =================== */
+
+.profile-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile-heading h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.profile-heading p {
+    font-size: 15px;
+    color: #64748b;
+}
+
+
+/* =================== PROFILE IMAGE =================== */
+
+.profile-image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.img-card {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff7ed;
+    border: 3px solid #f97316;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.img-card label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.photo-preview {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-preview i {
+    font-size: 60px;
+    color: #f97316;
+}
+
+.photo-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.image-text h3 {
+    font-size: 18px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.image-text p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+/* =================== FORM GRID =================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    margin: 0;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 9px;
+}
+
+
+/* =================== INPUT BOX =================== */
+
+.input-box {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    padding: 0 16px;
+    transition: 0.3s;
+}
+
+.input-box:focus-within {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+    background-color: white;
+}
+
+.input-box i {
+    width: 20px;
+    color: #94a3b8;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #111827;
+}
+
+.input-box input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =================== TEXTAREA =================== */
+
+.textarea-box {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    padding: 16px;
+    transition: 0.3s;
+}
+
+.textarea-box:focus-within {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+    background-color: white;
+}
+
+.textarea-box i {
+    width: 20px;
+    color: #94a3b8;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+
+.textarea-box textarea {
+    width: 100%;
+    height: 90px;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =================== BUTTONS =================== */
+
+.profile-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.profile-buttons button {
+    padding: 13px 25px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+}
+
+.cancel-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.save-btn {
+    background-color: #f97316;
+    color: white;
+    border: 1px solid #f97316;
+}
+
+.save-btn i {
+    margin-right: 7px;
+}
+
+.save-btn:hover {
+    background-color: #ea580c;
+}
+
+
+/* =================== RESPONSIVE =================== */
+
+@media (max-width: 768px) {
+
+    .navebar {
+        padding: 0 5%;
+    }
+
+    .navebar .header ul {
+        display: none;
+    }
+
+    .navebar .header h1 {
+        font-size: 2rem;
+    }
+
+    .profile-page {
+        padding: 120px 15px 40px;
+    }
+
+    .profile-card {
+        padding: 25px 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .profile-buttons {
+        flex-direction: column;
+    }
+
+    .profile-buttons button {
+        width: 100%;
+    }
+}

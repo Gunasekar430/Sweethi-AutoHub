@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#eef3f8;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard{
+    width:16.5%;
+    height:100vh;
+    background-color:#0a0e1a;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.dashboard h1{
+    height:85px;
+    display:flex;
+    align-items:center;
+    padding-left:30px;
+    font-size:28px;
+    color:white;
+    border-bottom:1px solid #252b3a;
+    margin-bottom:25px;
+}
+
+.dashboard h1 i{
+    color:#f97316;
+    margin-right:10px;
+}
+
+.dashboard-page{
+    display:flex;
+    flex-direction:column;
+    padding:0 12px;
+}
+
+.dashboard-page a{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#cbd5e1;
+    font-size:16px;
+    padding:15px 18px;
+    margin-bottom:5px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.dashboard-page a:hover{
+    width:100%;
+    background-color:#f97316;
+    color:white;
+}
+
+.dashboard-page a i{
+    width:22px;
+    color:inherit;
+    font-size:17px;
+}
+
+.dashboard-page .logout{
+    margin-top:70px;
+    color:#ff4d4d;
+    border-top:1px solid #252b3a;
+}
+
+.dashboard-page .logout:hover{
+    background-color:#dc2626;
+    color:white;
+}
+
+/* ================= TOP NAVBAR ================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:16.5%;
+    width:83.5%;
+    height:85px;
+    background-color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    z-index:900;
+}
+
+.navbar h1{
+    padding:0;
+    font-size:27px;
+    color:#0a0e1a;
+}
+
+/* ================= PROFILE ================= */
+
+.profile{
+    position:relative;
+}
+
+.profile>i{
+    font-size:35px;
+    color:#f97316;
+    cursor:pointer;
+}
+
+.profile-menu{
+    display:none;
+    position:absolute;
+    top:50px;
+    right:0;
+    width:170px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    overflow:hidden;
+    z-index:2000;
+}
+
+.profile-menu a{
+    display:block;
+    padding:13px 16px;
+    text-decoration:none;
+    color:#111827;
+    font-size:14px;
+}
+
+.profile-menu a:hover{
+    background-color:#f3f4f6;
+}
+
+.profile-menu a i{
+    width:25px;
+    color:#f97316;
+}
+
+/* ================= RENTAL BOOKING SECTION ================= */
+
+.rental-booking-section{
+    width:85%;
+    margin-top:4%;
+    margin-left:15%;
+    padding:35px 40px;
+    background-color:#eef3f8;
+    font-family:Arial,sans-serif;
+}
+
+/* ================= MAIN WHITE CARD ================= */
+
+.rental-booking-card{
+    width:100%;
+    background-color:#ffffff;
+    border:1px solid #dce3ea;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.04);
+}
+
+/* ================= TITLE ================= */
+
+.rental-booking-title{
+    padding:25px 30px 15px;
+}
+
+.rental-booking-title h2{
+    font-size:23px;
+    font-weight:700;
+    color:#111827;
+}
+
+.rental-booking-title h2 i{
+    color:#6366f1;
+    margin-right:10px;
+}
+
+/* ================= TABLE WRAPPER ================= */
+
+.rental-table-wrapper{
+    width:100%;
+    overflow-x:auto;
+}
+
+/* ================= TABLE ================= */
+
+.rental-booking-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.rental-booking-table thead{
+    background-color:#f5f7fa;
+}
+
+.rental-booking-table th{
+    padding:16px 18px;
+    text-align:left;
+    font-size:15px;
+    font-weight:700;
+    color:#334155;
+    border-bottom:1px solid #dbe2ea;
+    white-space:nowrap;
+}
+
+.rental-booking-table td{
+    padding:16px 18px;
+    font-size:15px;
+    color:#111827;
+    border-bottom:1px solid #edf0f3;
+    vertical-align:middle;
+    white-space:nowrap;
+}
+
+.rental-booking-table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+.rental-booking-table tbody tr{
+    transition:0.2s;
+}
+
+.rental-booking-table tbody tr:hover{
+    background-color:#fafafa;
+}
+
+/* ================= BADGES ================= */
+
+.rental-badge{
+    display:inline-block;
+    min-width:65px;
+    padding:6px 14px;
+    border-radius:20px;
+    text-align:center;
+    font-size:13px;
+    font-weight:700;
+}
+
+.license-valid{
+    background-color:#d1fae5;
+    color:#15803d;
+}
+
+.license-pending{
+    background-color:#fee2e2;
+    color:#dc2626;
+}
+
+.payment-paid{
+    background-color:#d1fae5;
+    color:#15803d;
+}
+
+.payment-pending{
+    background-color:#fef3c7;
+    color:#d97706;
+}
+
+.booking-approved{
+    background-color:#d1fae5;
+    color:#15803d;
+}
+
+.booking-pending{
+    background-color:#fef3c7;
+    color:#d97706;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.rental-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.rental-actions button{
+    padding:8px 16px;
+    background-color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.complete-btn{
+    border:1px solid #cbd5e1;
+    color:#2563eb;
+}
+
+.complete-btn:hover{
+    background-color:#2563eb;
+    color:white;
+    border-color:#2563eb;
+}
+
+.rental-approve-btn{
+    border:1px solid #cbd5e1;
+    color:#15803d;
+}
+
+.rental-approve-btn:hover{
+    background-color:#15803d;
+    color:white;
+    border-color:#15803d;
+}
+
+.rental-reject-btn{
+    border:1px solid #cbd5e1;
+    color:#dc2626;
+}
+
+.rental-reject-btn:hover{
+    background-color:#dc2626;
+    color:white;
+    border-color:#dc2626;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+    .rental-booking-section{
+        padding:20px 15px;
+    }
+
+    .rental-booking-card{
+        border-radius:12px;
+    }
+
+    .rental-booking-title{
+        padding:20px;
+    }
+
+    .rental-booking-table{
+        min-width:1200px;
+    }
+}

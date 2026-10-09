@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+
+<div class="main-box">
+
+    <h1>Write Review</h1>
+
+    <div class="sub-box">
+        <h2>Name : Kakashi</h2>
+
+        <h3>Rating</h3>
+
+        <div class="review-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+
+        <h3>Review</h3>
+
+        <p>
+            This product is amazing. My skin feels smooth and fresh.
+        </p>
+
+        <button onclick="deleteReview(event)">
+            Delete
+        </button>
+
+    </div>
+
+</div>
+
+<div class="pop"></div>
+
+<div class="add-book">
+
+    <h2>Add Review</h2>
+
+    <form>
+
+        <input
+        id="book-title"
+        type="text"
+        placeholder="Enter Your Name">
+
+        <textarea
+        id="book-text"
+        placeholder="Write Review">
+        </textarea>
+
+        <button id="add">
+            ADD
+        </button>
+
+        <button id="cancel">
+            CANCEL
+        </button>
+
+    </form>
+
+</div>
+
+<button class="btn" id="btn1">Write Review</button>
+
+<script src="review.js"> </script>
+
+</body>
+</html>

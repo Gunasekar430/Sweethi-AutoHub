@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rentbooking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="dashboard">
+            <h1><i class="fas fa-leaf"></i>Admin</h1>
+
+            <div class="dashboard-page">
+                <a href="dashboard.html"><i class="fas fa-th-large"></i> <span>Dashboard</span></a>
+                <a href="manageCard.html"><i class="fas fa-car"></i> <span>Manage Cars</span></a>
+                <a href="addNewCar.html"><i class="fas fa-plus-circle"></i> <span>Add New Car</span></a>
+                <a href="BuyOrder.html"><i class="fas fa-shopping-cart"></i> <span>Buy Orders</span></a>
+                <a href="rentBooking.html"><i class="fas fa-calendar-check"></i> <span>Rental Bookings</span></a>
+                <a href="sellRequest.html"><i class="fas fa-handshake"></i> <span>Sell Requests</span></a>
+                <a href="review.html"><i class="fas fa-star"></i> <span>Reviews</span></a>
+                <a href="adminLogin.html" class="logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="navbar">
+            <h1 style="color:  #0a0e1a;">Rent Booking</h1>
+
+            <div class="profile">
+
+                <i class="fas fa-user-circle" onclick="toggleMenu()"></i>
+
+                <div class="profile-menu" id="profileMenu">
+
+                    <a href="Setting.html">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+
+                    <a href="adminLogin.html">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- -----------------------java script------------------ -->
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("profileMenu");
+
+                    menu.style.display =
+                        menu.style.display === "block"
+                            ? "none"
+                            : "block";
+                }
+
+                window.addEventListener("click", function (event) {
+
+                    const menu = document.getElementById("profileMenu");
+                    const profileIcon = document.querySelector(".fa-user-circle");
+
+                    if (
+                        !profileIcon.contains(event.target) &&
+                        !menu.contains(event.target)
+                    ) {
+                        menu.style.display = "none";
+                    }
+
+                });
+            </script>
+
+    </section>
+
+    <section class="rental-booking-section">
+
+    <div class="rental-booking-card">
+
+        <!-- TITLE -->
+        <div class="rental-booking-title">
+            <h2>
+                <i class="fa-solid fa-calendar-days"></i>
+                Rental Bookings
+            </h2>
+        </div>
+
+        <!-- TABLE -->
+        <div class="rental-table-wrapper">
+
+            <table class="rental-booking-table">
+
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Car</th>
+                        <th>Pickup</th>
+                        <th>Return</th>
+                        <th>Days</th>
+                        <th>Amount</th>
+                        <th>License</th>
+                        <th>Payment</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- BOOKING 1 -->
+                    <tr>
+                        <td>Vikram S.</td>
+
+                        <td>Mercedes GLC300</td>
+
+                        <td>2026-07-10</td>
+
+                        <td>2026-07-12</td>
+
+                        <td>2</td>
+
+                        <td>₹9000</td>
+
+                        <td>
+                            <span class="rental-badge license-valid">
+                                Valid
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="rental-badge payment-paid">
+                                Paid
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="rental-badge booking-approved">
+                                Approved
+                            </span>
+                        </td>
+
+                        <td>
+                            <div class="rental-actions">
+
+                                <button class="complete-btn">
+                                    Complete
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- BOOKING 2 -->
+                    <tr>
+                        <td>Priya M.</td>
+
+                        <td>BMW X5</td>
+
+                        <td>2026-07-15</td>
+
+                        <td>2026-07-16</td>
+
+                        <td>1</td>
+
+                        <td>₹4500</td>
+
+                        <td>
+                            <span class="rental-badge license-pending">
+                                Pending
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="rental-badge payment-pending">
+                                Pending
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="rental-badge booking-pending">
+                                Pending
+                            </span>
+                        </td>
+
+                        <td>
+                            <div class="rental-actions">
+
+                                <button class="rental-approve-btn">
+                                    Approve
+                                </button>
+
+                                <button class="rental-reject-btn">
+                                    Reject
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>

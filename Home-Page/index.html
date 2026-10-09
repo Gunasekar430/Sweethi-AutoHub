@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================Nave Bar================= -->
+    <section>
+        <div class="navebar">
+            <div class="header">
+
+                <h1 class="brand-logo">
+                    <i class="fa-solid fa-car-side"></i>
+                    <span>Sweethi <b>AutoHub</b></span>
+                </h1>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="RentCar.html">Rent Car</a></li>
+                    <li><a href="ByeCar.html">Buy Car</a></li>
+                    <li><a href="SellPage.html">Sell Car</a></li>
+                </ul>
+            </div>
+
+
+            <div class="logSignButton" id="loginSign">
+
+                <button class="log-btn">Login</button>
+                <span style="padding-top: 5px;">/</span>
+                <button class="signup-btn">Signup</button>
+            </div>
+
+            <div class="navbar-pro" style="display:none;">
+
+                <div class="profile">
+
+                    <i class="fa-solid fa-circle-user" id="profileIcon" onclick="toggleMenu(event)">
+                    </i>
+
+                    <div class="profile-menu" id="profileMenu">
+
+                        <a href="profile.html">My Profile</a>
+
+                        <a href="Setting.html">Settings</a>
+
+                        <a href="#" onclick="logout()">Logout</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="home">
+            <div class="text">
+                <h1>Premium Cars for <br> <span style="padding-left: 70px; padding-top: 15px;">Every Need</span></h1>
+                <p>Explore, Compare, Buy, or Rent Cars with a seamless online experience.</p>
+                <a href="RentCar.html"><button style="cursor: pointer;">Book a Rental</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================Search Bar================= -->
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+
+                <div class="field">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="carSearch" placeholder="Search Car..." autocomplete="off">
+                    <div id="searchSuggestions" class="search-suggestions">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-tag"></i>
+
+                    <select id="brandFilter">
+                        <option value="all">All Brands</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Tata">Tata</option>
+                        <option value="Mahindra">Mahindra</option>
+                        <option value="Kia">Kia</option>
+                        <option value="Honda">Honda</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-rupee-sign"></i>
+
+                    <select id="priceFilter">
+                        <option value="all">Price Range</option>
+                        <option value="0-10">Below 10 Lakh</option>
+                        <option value="10-20">10-20 Lakh</option>
+                        <option value="20-30">20-30 Lakh</option>
+                        <option value="30-40">30-40 Lakh</option>
+                        <option value="40-999">Above 40 Lakh</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <i class="fas fa-gas-pump"></i>
+
+                    <select id="fuelFilter">
+                        <option value="all">Fuel Type</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="EV">EV</option>
+                    </select>
+                </div>
+
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-arrow-right"></i>
+                    Search
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================Featured Cars================ -->
+
+    <section>
+        <div class="Cars-card">
+            <h1>Featured Cars</h1>
+            <p>Handpicked premium vehicles just for you.</p>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/car1.avif" alt="Car">
+                    </div>
+
+                    <div class="title">
+                        <h2>Toyota Fortuner</h2>
+                        <h3>₹ 38 Lakh</h3>
+                        <p>Rent: ₹ 8,500 / day</p>
+                        <span>Popular</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/car2.avif" alt="Car">
+                    </div>
+
+                    <div class="title">
+                        <h2>Hyundai Cretar</h2>
+                        <h3>₹ 15 Lakh</h3>
+                        <p>Rent: ₹ 4,200 / day</p>
+                        <span>Popular</span>
+
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/car3.avif" alt="Car">
+                    </div>
+
+                    <div class="title">
+                        <h2>Mahindra Thar</h2>
+                        <h3>₹ 16 Lakh</h3>
+                        <p>Rent: ₹ 5,000 / day</p>
+                        <span>Popular</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/car4.avif" alt="Car">
+                    </div>
+
+                    <div class="title">
+                        <h2>Tata Harrier</h2>
+                        <h3>₹ 22 Lakh</h3>
+                        <p>Rent: ₹ 6,500 / day</p>
+                        <span>Popular</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/car5.avif" alt="Car">
+                    </div>
+
+                    <div class="title">
+                        <h2>Honda City</h2>
+                        <h3>₹ 32 Lakh</h3>
+                        <p>Rent: ₹ 3,500 / day</p>
+                        <span>Popular</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/car6.webp" alt="Car">
+                    </div>
+
+                    <div class="title">
+                        <h2>Kia Seltos</h2>
+                        <h3>₹ 14 Lakh</h3>
+                        <p>Rent: ₹ 4,500 / day</p>
+                        <span>Popular</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="collection">
+
+            <h1>Luxury Cars Collection</h1>
+
+            <div class="collection-box" id="collectionBox">
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="product-slider">
+            <h1>Rent Care Collection</h1>
+            <button class="prev">&#10094;</button>
+
+            <div class="product-container">
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img1.webp">
+                    <h3>BMW X5 xDrive30d</h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹4500 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img13.webp">
+                    <h3>Audi Q7 Premium Plus</h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹5500 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img49.jpg">
+                    <h3>Kia Seltos GTX+</h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹4000 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img73.jpg">
+                    <h3>MG Hector Sharp Pro </h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹4500 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img70.webp">
+                    <h3>Honda City ZX</h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹5000 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img22.jpg">
+                    <h3>Tata Nexon Fearless </h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹3000 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img51.webp">
+                    <h3>Hyundai Verna SX </h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹4500 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img22.jpg">
+                    <h3>Toyota Innova Crysta ZX </h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹5500 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img6.webp">
+                    <h3>BMW 320d M Sport </h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹5500 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Bye-img/img16.webp">
+                    <h3>Audi A6 Technology</h3>
+                    <div class="car-info">
+
+                        <div class="box">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <small>Kilometers</small>
+                            <p>6,800 Km</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gas-pump"></i>
+                            <small>Fuel Type</small>
+                            <p>Petrol</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <small>Registration</small>
+                            <p>Chennai</p>
+                        </div>
+
+                    </div>
+
+                    <h4><span style="font-size: 20px;">₹4500 / </span>Day</h4>
+                    <button class="Booking">Booking Car</button>
+                </div>
+
+            </div>
+
+            <button class="next">&#10095;</button>
+
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="choose">
+            <h1>Why Choose Us?</h1>
+            <p style="padding-left: 11%; padding-top: 20px; font-size: 18px; color: rgb(56, 55, 55);">We make car buying
+                & renting effortless.</p>
+
+            <div class="choose-card">
+                <div class="card">
+                    <i class="fa-solid fa-car"></i>
+                    <h2>Wide Range</h2>
+                    <p>500+ cars from 50+ trusted brands.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h2>Best Price</h2>
+                    <p>Guaranteed competitive rates.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>Secure Booking</h2>
+                    <p>100% safe & encrypted payments.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h2>24/7 Support</h2>
+                    <p>We're here for you anytime.</p>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <section>
+        <div class="popular" style="padding-top: 10%;">
+            <h1>Popular Brands</h1>
+            <p>Trusted by millions across India.</p>
+
+            <div class="popular-button">
+                <div class="popular-card">
+                    <img src="img/logo/logo1.jpg" alt="Logo">
+                </div>
+
+                <div class="popular-card">
+                    <img src="img/logo/logo2.jpg" alt="Logo">
+                </div>
+
+                <div class="popular-card">
+                    <img src="img/logo/logo3.jpg" alt="Logo">
+                </div>
+
+                <div class="popular-card">
+                    <img src="img/logo/logo4.jpg" alt="Logo">
+                </div>
+
+                <div class="popular-card">
+                    <img src="img/logo/logo6.jpg" alt="Logo">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-grid">
+
+                <div class="footer-box">
+
+                    <h2 class="logo">
+                        <i class="fa-solid fa-car-side"></i>
+                        Sweethi <span>AutoHub</span>
+                    </h2>
+
+                    <p>
+                        Your trusted destination for buying,
+                        selling and renting premium cars across India.
+                    </p>
+
+                </div>
+
+                <div class="footer-box">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html">Home</a>
+
+                    <a href="ByeCar.html">Buy Cars</a>
+
+                    <a href="RentCar.html">Rent Cars</a>
+
+                    <a href="SellPage.html">Sell Cars</a>
+
+                    <a href="#">About Us</a>
+
+                </div>
+
+                <div class="footer-box">
+
+                    <h3>Support</h3>
+
+                    <a href="#">Contact Us</a>
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Terms & Conditions</a>
+
+                    <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+
+                    <p><i class="fa-solid fa-envelope"></i> support@sweethiautohub.com</p>
+
+                </div>
+
+                <div class="footer-box">
+
+                    <h3>Follow Us</h3>
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                © 2026 <b>Sweethi AutoHub</b>. All Rights Reserved |
+                Made with ❤️ in India.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="ByeCollection.js"></script>
+    <script src="cars.js"></script>
+    <!-- <script src="ByeCollection.js"></script> -->
+
+
+    <section>
+        <div class="login-card" id="loginCard">
+
+            <div class="login-heading">
+                <h2>User Login</h2>
+                <p>Login to continue to your account</p>
+            </div>
+            <form onsubmit="login(event)">
+
+                <div class="form-group">
+                    <label>Email Address</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input type="email" placeholder="admin@example.com" required id="email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" placeholder="Enter your password" required id="password">
+
+                        <!-- <i
+                            class="fa-solid fa-eye password-eye"
+                            onclick="showPassword()"
+                        ></i> -->
+                    </div>
+                </div>
+
+                <div class="login-options">
+
+                    <label class="remember">
+                        <input type="checkbox">
+                        Remember Me
+                    </label>
+
+                </div>
+
+                <p class="error-message" id="errorMessage"></p>
+
+                <button type="submit" class="login-btn" id="loginButton" onclick="login(event)">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                </button>
+
+            </form>
+    </section>
+
+    <section>
+        <div class="login-card" id="signCard">
+
+            <div class="login-heading">
+                <h2>Signup Your Page</h2>
+                <p>Sign to continue to your account</p>
+            </div>
+            <form onsubmit="checkSign(event)">
+
+                <div class="form-group">
+                    <label>Your Name</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-user"></i>
+
+                        <input type="text" placeholder="Enter Your Name" required id="signName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input type="email" placeholder="admin@example.com" required id="signEmail">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" placeholder="Enter your password" required id="signPassword">
+                    </div>
+                </div>
+
+                <div class="login-options">
+
+                    <label class="remember">
+                        <input type="checkbox" id="check">
+                        Remember Me
+                    </label>
+
+                </div>
+
+                <p class="error-message" id="errorMessage"></p>
+
+                <button type="submit" class="login-btn" onclick="checkSign(event)">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Sign Up
+                </button>
+
+            </form>
+    </section>
+
+
+
+
+    <div class="rent-view-booking" id="rent-view-booking">
+
+
+        <div class="container">
+            <div class="img-card">
+                <img src="img/Bye-img/img10.webp" alt="Car" id="rentImg">
+            </div>
+
+            <div class="sub-card">
+                <div class="text-card">
+                    <h5>Available Now</h5>
+                    <h1 id="rentName">Mercedes Benz GLC300 4Matic</h1>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐<span>4.9 (265 Reviews)</span>
+                    </div>
+
+                    <h3><span id="rentPrice">₹4,500</span> / Day</h3>
+                    <p>Experience premium luxury with the Mercedes Benz GLC300. Perfect for business meetings,
+                        weddings,family trips and long-distance travel.</p>
+                </div>
+
+                <div class="car-info">
+
+                    <div class="box">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <small>Kilometers</small>
+                        <p id="rentKm">5400 Km</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <small>Fuel Type</small>
+                        <p id="rentType">Petrol</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <small>Registration</small>
+                        <p id="rentLocation">Chennai</p>
+                    </div>
+
+                </div>
+
+                <div class="rent-info">
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <h4>Minimum Rental</h4>
+                        <p>1 Day</p>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>Maximum Rental</h4>
+                        <p>2 Weeks</p>
+                    </div>
+
+                </div>
+
+
+                <button class="book-btn">
+                    <a href="BookingPage.html" style="text-decoration: none; color: white;"><i
+                            class="fa-solid fa-car"></i> Book Now</a>
+                </button>
+
+                <button><i class="fa-solid fa-xmark" id="icon" style="cursor: pointer;"></i></button>
+
+            </div>
+
+        </div>
+        </section>
+    </div>
+
+
+
+    <script src="index.js">
+
+
+    </script>
+</body>
+
+</html>

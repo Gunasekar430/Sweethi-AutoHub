@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="view.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="navebar">
+            <div class="header">
+                <h1>Header</h1>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="RentCar.html">Rent Car</a></li>
+                    <li><a href="ByeCar.html">Buy Car</a></li>
+                    <li><a href="SellPage.html">Sell Car</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="main-card">
+            <div class="view-card">
+
+        <div class="card">
+
+            <h6 id="viewRegYear">
+                Reg Year : Unregistered
+            </h6>
+
+            <p id="viewCarName">
+                MERCEDES BENZ GLC300 4Matic
+            </p>
+
+            <p id="viewCarPrice">
+                ₹ 59,00,000
+            </p>
+
+            <img
+                id="viewCarImage"
+                src="img/car6.webp"
+                alt="car"
+            >
+
+        </div>
+
+        <div class="car-info">
+
+            <div class="box">
+                <i class="fa-solid fa-gauge-high"></i>
+                <small>Kilometers</small>
+                <p id="viewCarKm">5400 Km</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-gas-pump"></i>
+                <small>Fuel Type</small>
+                <p id="viewCarFuel">Petrol</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <small>Registration</small>
+                <p id="viewCarLocation">Chennai</p>
+            </div>
+
+        </div>
+
+    </div>
+
+        <div class="contact-card">
+            <div class="contact-header">
+                <p>Reserve Your <span style="font-weight: bold;">Own Luxury</span></p>
+                <h6>Brand Trusted by the Elites</h6>
+            </div>            
+            <div class="counter-main">
+                <div class="counter-box">
+                    <div class="icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <div class="text">
+                        <h2>10000+</h2>
+                        <p>Satisfied <br><strong>Customers</strong></p>
+                    </div>
+                </div>
+
+                <div class="counter-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <div class="text">
+                        <h2>151 Quality</h2>
+                        <p><strong>Checkpoints</strong></p>
+                    </div>
+                </div>
+
+                <div class="counter-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+
+                    <div class="text">
+                        <h2>30 Luxury</h2>
+                        <p><strong>Car Brands</strong></p>
+                    </div>
+                </div>
+
+                <div class="counter-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div class="text">
+                        <h2>100%</h2>
+                        <p>Payment <br><strong>Secured</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="card-def">
+                <h4>Please select how you'd like to reserve your car.</h4>
+            </div>
+
+            <div class="contact-mainCard">
+                <div class="main-card">
+                    <button class="button1" type="color" onclick="change()">Pay 2 Lacs & Reserve Car for 24 hrs</button>
+                </div>
+
+                <div class="main-card">
+                    <button class="button1" type="color" onclick="change()">Pay 10% & Get Confirmed Booking</button>
+                </div>
+
+                <div class="main-card">
+                    <button class="button1" type="color" onclick="change()">Tick iconPay 100% & Get Car Delivered Home</button>
+                </div>
+            </div>
+            <div class="reserve-button">
+                <button><a href="orderPage.html" style="text-decoration: none; color: white;">Reserve This Card</a></button>
+            </div>
+        </div>
+        
+    </div>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div style="margin-left: 100px;">
+                    <h4>DriveHub</h4>
+                    <p style="font-size:14px; max-width:200px;">Premium cars for sale and rent. Trusted since 2024.</p>
+                </div>
+
+                <div style="margin-left: 50px;">
+                    <h4>Quick Links</h4>
+                    <a href="#">Buy Cars</a>
+                    <a href="#">Rent Cars</a>
+                    <a href="#">Offers</a>
+                </div>
+
+                <div style="margin-left: 50px;">
+                    <h4>Support</h4>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <div style="margin-left: 50px;">
+                    <h4>Follow Us</h4>
+                    <div class="social">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">© 2026 DriveHub. All rights reserved. Made with ❤️ for India.</div>
+        </div>
+    </footer>
+ 
+<!-- <script>
+
+    var button = document.querySelector(".button1")
+
+    function change(){
+       
+        if(button.style.backgroundColor == "white"){
+            button.style.backgroundColor = "black"
+            button.style.color = "white"
+        }
+
+        else {
+            button.style.backgroundColor = "white"
+            button.style.color = "black"
+        }
+    }
+
+</script> -->
+
+<script src="cars.js"></script>
+<script src="view.js"></script>
+</body>
+</html>

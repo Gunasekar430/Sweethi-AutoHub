@@ -1,0 +1,76 @@
+| Car Name                  | Market Price | AutoHub Price | Year | Fuel   |        KM | Owner     | Registration |
+| ------------------------- | -----------: | ------------: | ---- | ------ | --------: | --------- | ------------ |
+| Toyota Fortuner           |   ₹42,50,000 |    ₹39,90,000 | 2022 | Diesel | 28,000 Km | 1st Owner | Chennai      |
+| Hyundai Creta SX          |   ₹18,80,000 |    ₹16,90,000 | 2021 | Petrol | 34,500 Km | 1st Owner | Coimbatore   |
+| Tata Nexon XZ+            |   ₹14,20,000 |    ₹12,95,000 | 2022 | Petrol | 22,000 Km | 1st Owner | Madurai      |
+| Mahindra Thar LX          |   ₹18,50,000 |    ₹17,20,000 | 2023 | Diesel | 12,500 Km | 1st Owner | Chennai      |
+| Kia Seltos GTX            |   ₹19,90,000 |    ₹18,10,000 | 2022 | Petrol | 26,000 Km | 1st Owner | Salem        |
+| Honda City ZX             |   ₹15,80,000 |    ₹13,90,000 | 2021 | Petrol | 41,000 Km | 1st Owner | Trichy       |
+
+| Maruti Suzuki Brezza      |   ₹12,80,000 |    ₹11,50,000 | 2022 | Petrol | 19,000 Km | 1st Owner | Erode        |
+| Volkswagen Virtus         |   ₹17,90,000 |    ₹16,20,000 | 2023 | Petrol | 14,500 Km | 1st Owner | Chennai      |
+| Skoda Slavia              |   ₹18,20,000 |    ₹16,70,000 | 2022 | Petrol | 20,800 Km | 1st Owner | Vellore      |
+| Toyota Innova Crysta      |   ₹28,50,000 |    ₹26,20,000 | 2021 | Diesel | 45,000 Km | 1st Owner | Tiruppur     |
+| BMW 3 Series              |   ₹55,00,000 |    ₹48,50,000 | 2021 | Petrol | 31,000 Km | 2nd Owner | Chennai      |
+| Mercedes-Benz C-Class     |   ₹62,00,000 |    ₹56,90,000 | 2022 | Petrol | 18,000 Km | 1st Owner | Coimbatore   |
+
+| Audi A4 Premium           |   ₹52,00,000 |    ₹46,50,000 | 2021 | Petrol | 29,000 Km | 2nd Owner | Chennai      |
+| Volvo XC60                |   ₹68,00,000 |    ₹60,50,000 | 2022 | Diesel | 24,000 Km | 1st Owner | Bangalore    |
+| Jeep Compass              |   ₹27,90,000 |    ₹24,80,000 | 2021 | Diesel | 38,000 Km | 1st Owner | Chennai      |
+| MG Hector Sharp           |   ₹21,50,000 |    ₹18,90,000 | 2022 | Petrol | 27,000 Km | 1st Owner | Madurai      |
+| Nissan Magnite            |   ₹10,80,000 |     ₹9,40,000 | 2023 | Petrol | 11,000 Km | 1st Owner | Trichy       |
+| Renault Kiger             |   ₹11,50,000 |    ₹10,20,000 | 2022 | Petrol | 18,500 Km | 1st Owner | Salem        |
+
+| Mahindra XUV700 AX7       |   ₹28,90,000 |    ₹26,70,000 | 2023 | Diesel | 15,000 Km | 1st Owner | Chennai      |
+| Tata Harrier Dark Edition |   ₹25,50,000 |    ₹23,10,000 | 2022 | Diesel | 23,500 Km | 1st Owner | Coimbatore   |
+
+
+Bye Car 
+
+| No | Car Name                    | Price      | KM        | Fuel   | Reg. Year |Chennai
+| -- | --------------------------- | ---------- | --------- | ------ | --------- |Madurai
+| 1  | Mercedes Benz GLC300 4Matic | ₹59,00,000 | 6,800 Km  | Petrol | 2022      |Salem
+| 2  | BMW X5 xDrive30d            | ₹72,50,000 | 18,500 Km | Diesel | 2021      |Erode
+| 3  | Audi Q7 Premium Plus        | ₹78,90,000 | 22,000 Km | Diesel | 2022      |Trichy
+| 4  | Volvo XC60 Inscription      | ₹61,50,000 | 15,800 Km | Diesel | 2023      |Vellore
+| 5  | Toyota Fortuner Legender    | ₹46,90,000 | 25,500 Km | Diesel | 2022      |Tiruppur
+| 6  | Mahindra XUV700 AX7         | ₹28,50,000 | 12,800 Km | Diesel | 2023      |Bangalore
+| 7  | Hyundai Creta SX(O)         | ₹18,90,000 | 19,500 Km | Petrol | 2022      |
+| 8  | Kia Seltos GTX+             | ₹20,40,000 | 21,300 Km | Petrol | 2023      |
+| 9  | Tata Harrier Dark Edition   | ₹24,80,000 | 28,000 Km | Diesel | 2022      |
+| 10 | MG Hector Sharp Pro         | ₹23,90,000 | 16,500 Km | Petrol | 2023      |
+| 11 | Jeep Compass Limited        | ₹31,50,000 | 26,000 Km | Diesel | 2021      |
+| 12 | Honda City ZX               | ₹15,20,000 | 34,000 Km | Petrol | 2021      |
+| 13 | Skoda Slavia Style          | ₹17,80,000 | 15,500 Km | Petrol | 2023      |
+| 14 | Volkswagen Virtus GT        | ₹18,60,000 | 18,800 Km | Petrol | 2022      |
+| 15 | Maruti Suzuki Brezza ZXI    | ₹12,40,000 | 29,000 Km | Petrol | 2022      |
+
+
+| 16 | Tata Nexon Fearless         | ₹14,60,000 | 14,200 Km | Petrol | 2023      |
+| 17 | Hyundai Verna SX            | ₹16,70,000 | 24,000 Km | Petrol | 2022      |
+| 18 | Toyota Innova Crysta ZX     | ₹29,90,000 | 31,500 Km | Diesel | 2021      |
+
+| 19 | Mahindra Scorpio N Z8       | ₹24,20,000 | 11,000 Km | Diesel | 2023      |
+| 20 | Kia Carens Luxury Plus      | ₹18,30,000 | 17,800 Km | Diesel | 2022      |
+
+| 21 | BMW 320d M Sport            | ₹49,90,000 | 27,000 Km | Diesel | 2021      |
+| 22 | Audi A6 Technology          | ₹58,50,000 | 23,400 Km | Petrol | 2022      |
+| 23 | Mercedes Benz C220d         | ₹56,80,000 | 19,800 Km | Diesel | 2021      |
+| 24 | Volvo S90 B5                | ₹63,50,000 | 14,600 Km | Petrol | 2023      |
+| 25 | Lexus ES 300h               | ₹68,90,000 | 16,200 Km | Hybrid | 2022      |
+| 26 | Nissan Magnite XV           | ₹10,50,000 | 25,000 Km | Petrol | 2022      |
+| 27 | Renault Kiger RXZ           | ₹11,40,000 | 20,500 Km | Petrol | 2023      |
+| 28 | Honda Elevate ZX            | ₹17,20,000 | 13,000 Km | Petrol | 2024      |
+| 29 | Tata Safari Accomplished    | ₹27,80,000 | 22,500 Km | Diesel | 2023      |
+| 30 | Hyundai Alcazar Signature   | ₹24,90,000 | 18,300 Km | Diesel | 2022      |
+
+
+img/Bye-img/img31.webp
+Bangalore
+Madurai
+Salem
+Erode
+Trichy
+Vellore
+Tiruppur
+

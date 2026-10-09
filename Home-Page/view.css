@@ -1,0 +1,467 @@
+/* ==================== GLOBAL ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+
+/* ==================== NAVBAR ==================== */
+
+.navebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 0 15px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navebar .header {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    padding: 20px 0;
+}
+
+.navebar .header h1 {
+    font-size: 2.5rem;
+}
+
+.navebar .header ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: 40px;
+}
+
+.navebar .header ul li {
+    list-style: none;
+}
+
+.navebar .header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navebar .header ul li a:hover {
+    color: #f97316;
+}
+
+.navebar .header ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: #f97316;
+    transition: 0.2s linear;
+}
+
+.navebar .header ul li a:hover::after {
+    width: 100%;
+}
+
+.navebar .button {
+    margin-right: 10%;
+}
+
+.navebar .button button {
+    padding: 10px 25px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.navebar .button button span {
+    color: black;
+    padding: 5px;
+}
+
+
+/* ==================== MAIN VIEW LAYOUT ==================== */
+.main-card{
+    display:flex;
+    margin-top: 10%;
+    
+
+}
+.view-box {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+/* ==================== LEFT CAR CARD ==================== */
+
+.view-card {
+    width: 27%;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.card {
+    width: 100%;
+}
+
+.card h6 {
+    display: inline-block;
+    margin: 30px 0 20px 30px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.card p {
+    padding: 0 30px 5px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.view-card img {
+    width: 100%;
+    height: 320px;
+    padding-top: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ==================== CAR INFORMATION ==================== */
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    padding: 0 15px;
+}
+
+.box {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.box:last-child {
+    border-right: none;
+}
+
+.box i {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.box small {
+    display: block;
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* ==================== RIGHT CONTACT CARD ==================== */
+
+.contact-card {
+    width: 55%;
+    margin-left: 70px;
+}
+
+.contact-header p {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #454444;
+}
+
+.contact-header p span {
+    color: black;
+    font-weight: bold;
+}
+
+.contact-header h6 {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 32px;
+    color: #7c7b7b;
+}
+
+
+/* ==================== COUNTER SECTION ==================== */
+
+.counter-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.counter-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.icon i {
+    font-size: 30px;
+    color: #444;
+}
+
+.text h2 {
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+}
+
+.text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.text strong {
+    color: black;
+}
+
+
+/* ==================== RESERVE OPTIONS ==================== */
+
+.card-def {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.card-def h4 {
+    font-size: 28px;
+}
+
+.contact-mainCard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main-card {
+    width: 100%;
+}
+
+.main-card button {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 20px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-card button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* ==================== RESERVE BUTTON ==================== */
+
+.reserve-button {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.reserve-button button {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reserve-button button:hover {
+    background-color: #ea580c;
+}
+
+
+/* ==================== FOOTER ==================== */
+
+footer {
+    margin-top: 10%;
+    padding: 50px 0 20px;
+    background: black;
+    color: #94a3b8;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-grid h4 {
+    margin-bottom: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.footer-grid a {
+    display: block;
+    margin-bottom: 10px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-grid a:hover {
+    color: #f97316;
+}
+
+.social i {
+    margin-right: 16px;
+    font-size: 22px;
+    color: #475569;
+    transition: 0.2s;
+}
+
+.social i:hover {
+    color: #f97316;
+}
+
+.footer-bottom {
+    padding-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 1200px) {
+    .view-box {
+        gap: 30px;
+    }
+
+    .view-card {
+        width: 40%;
+    }
+
+    .contact-card {
+        width: 60%;
+    }
+
+    .counter-main {
+        flex-wrap: wrap;
+    }
+
+    .counter-box {
+        width: 45%;
+    }
+
+    .contact-mainCard {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .navebar .header {
+        margin-left: 5%;
+    }
+
+    .navebar .button {
+        margin-right: 5%;
+    }
+
+    .view-box {
+        flex-direction: column;
+    }
+
+    .view-card,
+    .contact-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navebar .header ul {
+        display: none;
+    }
+
+    .navebar .header h1 {
+        font-size: 2rem;
+    }
+
+    .view-box {
+        width: 94%;
+        padding-top: 120px;
+    }
+
+    .contact-header p {
+        font-size: 2.2rem;
+    }
+
+    .contact-header h6 {
+        font-size: 24px;
+    }
+
+    .counter-box {
+        width: 100%;
+    }
+
+    .card-def h4 {
+        font-size: 22px;
+    }
+
+    .view-card img {
+        height: 280px;
+    }
+}
